@@ -1,12 +1,30 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-
+using OutdoorProducts.Models;
+using System.Linq;
+using OutdoorProducts.Models.ViewModels;
 namespace OutdoorProducts.Controllers
 {
-    public class HomeController: Controller
+    public class HomeController : Controller
     {
-        public IActionResult Index()
+        private IStoreRepository repository;
+        public int PageSize = 4;
+        public HomeController(IStoreRepository repo)
         {
-            return View();
+            repository = repo;
         }
+        public ViewResult Index(int productPage = 1)
+           => View(new ProductsListViewModel
+           {
+               Products = repository.Products
+                   .OrderBy(p => p.ProductID)
+                   .Skip((productPage - 1) * PageSize)
+                   .Take(PageSize),
+               PagingInfo = new PagingInfo
+               {
+                   CurrentPage = productPage,
+                   ItemsPerPage = PageSize,
+                   TotalItems = repository.Products.Count()
+               }
+           });
     }
 }
