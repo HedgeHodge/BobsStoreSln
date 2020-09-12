@@ -13,4 +13,7 @@ Student Project demo based on the Pro ASP.NET book by Adam Freeman.
 
 ## Screenshots
 
-![image](https://github.com/HedgeHodge/BobsStoreSln/blob/master/OutdoorProducts/Screenshot1.png?raw=true)
+![image](https://github.com/HedgeHodge/BobsStoreSln/blob/master/OutdoorProducts/Capture1.PNG?raw=true)
+![image](https://github.com/HedgeHodge/BobsStoreSln/blob/master/OutdoorProducts/Capture2.PNG?raw=true)
+![image](https://github.com/HedgeHodge/BobsStoreSln/blob/master/OutdoorProducts/Capture3.PNG?raw=true)
+![image](https://github.com/HedgeHodge/BobsStoreSln/blob/master/OutdoorProducts/Capture4.PNG?raw=true)
