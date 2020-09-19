@@ -1,7 +1,7 @@
 using System;
 using Xunit;
 
-namespace OutdoorProducts.Tests
+namespace Water.Tests
 {
     public class UnitTest1
     {
