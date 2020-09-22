@@ -1,4 +1,4 @@
-# BobsStoreSln
+# Store-Application
 Student Project demo based on the Pro ASP.NET book by Adam Freeman.
 
 ## Create Solution and Projects
